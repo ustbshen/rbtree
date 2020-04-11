@@ -340,8 +340,6 @@ void rbtree_remove(rbtree_t* tree, rbtree_node_t* node)
         ycolor = _rbtree_node_get_color(y);
         x = y->right;
         x_p = _rbtree_node_get_parent(y);
-        if (x)
-            _rbtree_node_set_parent(x, x_p);
 
         if (x_p == node)
         {
